@@ -1,18 +1,66 @@
 .container {
   height: 100vh;
-  max-width: 992px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 2.5rem 2.5rem;
 
   display: flex;
   flex-direction: column;
+  background: var(--blue);
 }
 
 .container section {
+  max-width: 992px;
   flex: 1;
-
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 6.25rem;
+  grid-template-columns: 3fr 4fr;
+
   align-content: center;
+}
+
+.container section > div:last-child {
+  display: flex;
+  flex-direction: column;
+
+  background: var(--blue-twitter);
+  padding: 3rem 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.5);
+}
+
+.container section div strong {
+  margin-top: 5rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: var(--white);
+  padding: 0 2rem;
+}
+
+.gitTitleStyle {
+  margin: 2rem 0;
+  padding: 1rem 2rem;
+}
+
+.gitTitleStyle span {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.inputUserDiv {
+  display: "flex";
+  justify-content: "space-between";
+}
+
+.inputUserDiv input {
+  width: "80%";
+  border-radius: "10px";
+  height: "9vh";
+}
+
+.inputUserDiv button {
+  width: "15%";
+  border-radius: "10px";
+  height: "9vh";
 }

@@ -1,33 +1,63 @@
-import React from "react";
-import { CompletedChallenges } from "../components/CompletedChallenges/CompletedChallenges";
-import { Countdown } from "../components/Countdown/Countdown";
-import { ExperienceBar } from "../components/ExperienceBar/ExperienceBar";
-import { Profile } from "../components/Profile/Profile";
+import React, { useState } from "react";
+import { useRouter } from "next/router";
 import Head from "next/head";
 
+import { Row, Col, Input, Button } from "antd";
+import { GithubOutlined, RightOutlined } from "@ant-design/icons";
+
 import styles from "../styles/pages/Home.module.css";
-import { ChallengeBox } from "../components/ChallengeBox/ChallengeBox";
-import { CountdownProvider } from "../contexts/CountdownContext";
 
 export default function Home() {
+  const [username, setUsername] = useState("");
+  const { push } = useRouter();
+
   return (
     <div className={styles.container}>
       <Head>
-        <title>main | move.it</title>
+        <title>login | move.it</title>
       </Head>
-      <ExperienceBar />
-      <CountdownProvider>
-        <section>
-          <div>
-            <Profile />
-            <CompletedChallenges />
-            <Countdown />
+      <section>
+        <div />
+        <div>
+          <img src="/white-logo-full.svg" />
+          <strong>Seja bem-vindo(a)!</strong>
+          <div className={styles.gitTitleStyle}>
+            <Row justify="start">
+              <Col span={4}>
+                <GithubOutlined style={{ fontSize: "3rem" }} />
+              </Col>
+              <Col span={18}>
+                <span>Digite abaixo o seu usuário GitHub para começar.</span>
+              </Col>
+            </Row>
           </div>
-          <div>
-            <ChallengeBox />
+          <div style={{ display: "flex", justifyContent: "space-between" }}>
+            <Input
+              size="large"
+              allowClear
+              placeholder="Digite seu usuário"
+              style={{
+                width: "80%",
+                borderRadius: "10px",
+                height: "9vh",
+              }}
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+            />
+            <Button
+              style={{
+                width: "15%",
+                borderRadius: "10px",
+                height: "9vh",
+              }}
+              size="large"
+              onClick={() => push(`/${username}`)}
+            >
+              <RightOutlined />
+            </Button>
           </div>
-        </section>
-      </CountdownProvider>
+        </div>
+      </section>
     </div>
   );
 }

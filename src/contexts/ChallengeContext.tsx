@@ -1,6 +1,5 @@
 import { createContext, ReactNode, useState } from "react";
 import { message } from "antd";
-import { SmileOutlined } from "@ant-design/icons";
 import challenges from "../../challenges.json";
 interface IChallengesProviderProps {
   children: ReactNode;

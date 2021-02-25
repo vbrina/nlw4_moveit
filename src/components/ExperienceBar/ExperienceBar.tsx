@@ -1,4 +1,4 @@
-import { Col, Progress, Row, Tooltip } from "antd";
+import { Col, Progress, Row } from "antd";
 import React, { useContext } from "react";
 import { ChallengesContext } from "../../contexts/ChallengeContext";
 import styles from "./ExperienceBar.module.css";
