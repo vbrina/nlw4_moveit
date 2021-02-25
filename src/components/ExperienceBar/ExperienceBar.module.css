@@ -22,8 +22,34 @@
   background: var(--green);
 }
 
-span.currentExperience {
-  position: absolute;
-  top: 12px;
-  transform: translateX(-50%);
+span.experience {
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.09);
+  border-radius: 5px;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  background: var(--blue);
+  color: var(--white);
+}
+
+.currentXp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #d7d8da;
+  font-weight: 500;
+}
+
+.currentXp span:first-child {
+  font-size: 1.15rem;
+}
+
+.currentXp span:last-child {
+  font-size: 1.25rem;
+
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.09);
+  border-radius: 5px;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  background: var(--green);
+  color: var(--white);
 }
