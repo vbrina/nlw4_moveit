@@ -30,3 +30,11 @@
 
 #### 🤔 What's different?
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I've decided not to follow the Instructor's folders scheme in matters of styles, putting all the <i><strong>module.css</strong></i> files together with its components. I believe that this is the best way to organize an app's styles, because you can keep the file's tracking all the time without having to search too much.</p>
+
+## 📈 Class #3
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In this class we've learned <strong>A LOT</strong>. The main feature that we worked on, was the ChallengeBox component. Why was that so important? Because we could learn about a very used thing that React "gives" to us, the Context API.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Context API is a very important feature to learn, because with this, you have a very simple and easy way to manage your states and be able to access them in <i>whatever</i> component you want.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Also we finished our Countdown component, making it communicate with the ChallengeBox component to trigger a challenge as the Countdown comes to 0. The Challenge is randomly chosen and is available in the <i>challenges.json</i> file and you can add as much challenges as you want. Only the <i>Failed</i> button on the ChallengeBox is executing some action. The ExperienceBar now fill according to your XP gain completing challenges, but as I said before, you're still not able to complete challenges.</p>
+
+#### 🤔 What's different?
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I've made some styles changes in the ChallengeBox and the Start/Stop button, adding more box-shadow.</p>
