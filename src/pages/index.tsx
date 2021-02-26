@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useRouter } from "next/router";
 import Head from "next/head";
 
-import { Row, Col, Input, Button } from "antd";
+import { Row, Col } from "antd";
 import { GithubOutlined, RightOutlined } from "@ant-design/icons";
 
 import styles from "../styles/pages/Home.module.css";
@@ -17,7 +17,6 @@ export default function Home() {
         <title>login | move.it</title>
       </Head>
       <section>
-        <div />
         <div>
           <img src="/white-logo-full.svg" />
           <strong>Seja bem-vindo(a)!</strong>
@@ -31,30 +30,15 @@ export default function Home() {
               </Col>
             </Row>
           </div>
-          <div style={{ display: "flex", justifyContent: "space-between" }}>
-            <Input
-              size="large"
-              allowClear
+          <div className={styles.inputAndButtonDiv}>
+            <input
               placeholder="Digite seu usuário"
-              style={{
-                width: "80%",
-                borderRadius: "10px",
-                height: "9vh",
-              }}
               value={username}
               onChange={(e) => setUsername(e.target.value)}
             />
-            <Button
-              style={{
-                width: "15%",
-                borderRadius: "10px",
-                height: "9vh",
-              }}
-              size="large"
-              onClick={() => push(`/${username}`)}
-            >
+            <button type="button" onClick={() => push(`/${username}`)}>
               <RightOutlined />
-            </Button>
+            </button>
           </div>
         </div>
       </section>
