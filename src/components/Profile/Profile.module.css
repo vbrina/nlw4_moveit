@@ -1,22 +1,52 @@
 .profileContainer {
   display: flex;
   align-items: center;
+  flex-direction: row;
 }
 
-.profileContainer img {
+.profileContainer > div img {
   width: 5.5rem;
   height: 5.5rem;
   border-radius: 50%;
 }
 
-.profileContainer div {
-  margin-left: 1.5rem;
+.profileContainer > div:nth-child(2) {
+  margin-left: 1rem;
+  width: 100%;
 }
 
-.profileContainer div strong {
+.profileContainer > div:nth-child(2) > div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profileContainer > div strong {
   font-size: 1.5rem;
   font-weight: 600;
   color: var(--title);
+}
+
+.profileContainer > div:nth-child(2) button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 1rem 1rem 1rem 1rem;
+  border: none;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.3);
+  background: var(--white);
+
+  transition: background-color 0.2s;
+}
+
+.profileContainer > div:nth-child(2) button:hover {
+  background: var(--blue);
+  color: var(--white);
+}
+
+.profileContainer > div:nth-child(2) button:focus {
+  outline: none;
 }
 
 .profileContainer div p {
