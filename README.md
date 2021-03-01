@@ -1,13 +1,18 @@
 # 👨‍💻 Next Level Week 4 - Frontend
-## ⚙ Configuring
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This project is being made with React. So once you clone the repository, just make sure to install all its dependencies, that's why you need to run:
-<pre>npm install</pre>
-<p>or</p>
-<pre>yarn install</pre>
-
 ## 📌 About the app - MoveIt
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This application is to people apply the Pomodoro Technique with some different features that include exercising during the pause.</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This workout once made, the user gain some XP to further share with their friends in a social media and be able to be like this: 😎</p>
+
+## 🌐 Try yourself
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To access this app in a production enviroment, access this <a href="https://move-it-vbrina.vercel.app/">LINK</a>, enter you Github username and enjoy 😀</p>
+
+## ⚙ Configuring
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>FIRST OF ALL</strong> you need to clone this repository. To do that, you just have to:
+<pre>git clone https://github.com/vbrina/nlw4_moveit.git</pre>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This project is being made with React. So once you clone the repository, you need to install all its dependencies, that's why you should run:
+<pre>npm install</pre>
+<p>or</p>
+<pre>yarn install</pre>
 
 ## 📓 Class #1
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;On this first workshop, was introduced the concept of React, such as Components, Props and States. With that, we've started creating the frontend project:</p>
@@ -38,3 +43,22 @@
 
 #### 🤔 What's different?
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I've made some styles changes in the ChallengeBox and the Start/Stop button, adding more box-shadow.</p>
+
+## ✔ Class #4
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This was the shortest class that we've had in this week. But it was very helpful with some stuff. The main feature was that we'he finished the ChallengeBox component, making its buttons have <i>onClick</i> actions, including: complete a challenge and modify all the states used, fail the challenge and not modify the states. These two actions make the Countdown reset to the original time. Also was added a notification sound when a new Challenge is shown.</p>
+
+#### 🤔 What's different?
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I've decided to use some external design lib to change some components, like:</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Message</strong> component. Is used when a new challenge is shown.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Progress Bar</strong> component. Is replacing the progress bar that was "homemade".</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To make the app more stylish, I've made a different style for the Levels. Now the user is able to see his current XP in a line below the Progress Bar. Also, the necessary XP to increase your level and your previous XP to increase you level, are with some different styles from the original ones.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ps.: This feature that shows to the user his previous XP to increase his level is a feature that I implemented too.</p>
+
+## 🏁 Class #5
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Finally in the last class of the week, we've could do a LOT of some very nice stuff for the future of the app.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We've made a Modal component that appears to the user when he increases his level. Also were implemented some Cookies management, saving the user progress in case of a F5 press or a comeback in the future.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the end of the class, we were able to Deploy our application in a production enviroment. Was used the Vercel enviroment to do that. The link to access my app is on the description of this repository.</p>
+
+#### 🤔 What's different?
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I've created a Home page to the app, so the user can enter with his Github username (this is to show the user's Name and Profile Picture in the Profile component). If the username is invalid, the Profile component will return a message, warning the user that that username is an invalid one. In this case, all the cookies are <strong>reseted</strong> to default too.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In Profile component, I've added an Logout Button, so the user can logout of the app. In this case, all the cookies are <strong>deleted</strong>.</p>
